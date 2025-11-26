@@ -3,10 +3,10 @@ import MainLayout from '../../layouts/MainLayout.astro';
 import PhotoGrid from '../../components/PhotoGrid.astro';
 import { getCollections, getImages } from '../../data/imageStore';
 
-const allCollection = {
-	id: undefined,
-	name: 'All',
-};
+// const allCollection = {
+// 	id: undefined,
+// 	name: 'All',
+// };
 // const collections = [allCollection, ...(await getCollections())];
 const collections = [...(await getCollections())];
 const { collection } = Astro.params;
